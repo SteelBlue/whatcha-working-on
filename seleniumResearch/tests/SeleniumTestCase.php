@@ -54,6 +54,11 @@ class SeleniumTestCase extends PHPUnit_Extensions_Selenium2TestCase
         return $this;
     }
 
+    protected function seePageIs($path)
+    {
+        dd($this->url());
+    }
+
     protected function hold($seconds)
     {
         sleep($seconds);

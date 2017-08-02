@@ -22,6 +22,7 @@ class ExampleTest extends SeleniumTestCase
         $this->visit('/form')
              ->type('Hello World', 'message')
              ->press('Submit')
-             ->see('The form was submitted.');
+             ->see('The form was submitted.')
+             ->seePageIs('/form-sumbitted');
     }
 }
