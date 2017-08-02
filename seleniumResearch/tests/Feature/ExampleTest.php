@@ -22,6 +22,7 @@ class ExampleTest extends SeleniumTestCase
         $this->visit('/form')
              ->type('Hello World', 'message')
              ->press('Submit')
+             ->hold(3)
              ->see('The form was submitted.');
     }
 }
