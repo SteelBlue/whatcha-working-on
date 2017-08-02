@@ -10,3 +10,8 @@ Download the selenium.jar file
 
 #### Boot Selenium Standalone Server
 java -jar selenium.jar
+
+#### If Server DOES NOT START
+Update the Java SDK by visiting http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+Download the latest Java platform.
