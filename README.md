@@ -26,5 +26,5 @@ Visit https://github.com/turbolinks/turbolinks
 
 This is a great way to load pages more quickly using AJAX.
 
-The body is completely removed each time, and styles/scripts are merged. This can cause an issues
+The body is completely removed each time, and styles/scripts in the head are merged. This can cause an issues
 with the page being loaded with extra assets. Need to research ways to escape this issue.
