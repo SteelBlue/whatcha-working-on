@@ -89,6 +89,11 @@
             <a href="https://forge.laravel.com">Forge</a>
             <a href="https://github.com/laravel/laravel">GitHub</a>
         </div>
+
+        <form style="margin-top:50px;">
+            <label for="message">Message:</label>
+            <input name="message">
+        </form>
     </div>
 </div>
 </body>
