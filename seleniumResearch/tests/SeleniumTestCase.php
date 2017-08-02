@@ -6,7 +6,7 @@ use PHPUnit_Extensions_Selenium2TestCase;
 
 class SeleniumTestCase extends PHPUnit_Extensions_Selenium2TestCase
 {
-    protected $baseUrl = 'http://seleniumresearch.dev/';
+    protected $baseUrl = 'http://seleniumresearch.dev';
 
     protected function setUp()
     {
@@ -58,7 +58,9 @@ class SeleniumTestCase extends PHPUnit_Extensions_Selenium2TestCase
 
     protected function seePageIs($path)
     {
-        dd($this->url());
+        $this->assertEquals($this->baseUrl . $path, $this->url());
+
+        return $this;
     }
 
     protected function hold($seconds)
