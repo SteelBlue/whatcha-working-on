@@ -1,24 +1,15 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests;
 
 use PHPUnit_Extensions_Selenium2TestCase;
 
-class SeleniumTest extends PHPUnit_Extensions_Selenium2TestCase
+class SeleniumTestCase extends PHPUnit_Extensions_Selenium2TestCase
 {
     protected function setUp()
     {
         $this->setBrowser('firefox');
         $this->setBrowserUrl('http://seleniumresearch.dev/');
-    }
-
-    /**
-     * Test the title <title> text of the homepage.
-     */
-    public function testTitle()
-    {
-        $this->visit('/')
-            ->see('Laravel', 'title');
     }
 
     /**

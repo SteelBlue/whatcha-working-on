@@ -10,14 +10,13 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 class ExampleTest extends TestCase
 {
     /**
-     * A basic test example.
+     * Test the title <title> text of the homepage.
      *
      * @return void
      */
-    public function testBasicTest()
+    public function testTitle()
     {
-        $response = $this->get('/');
-
-        $response->assertStatus(200);
+        $this->visit('/')
+             ->see('Laravel', 'title');
     }
 }
