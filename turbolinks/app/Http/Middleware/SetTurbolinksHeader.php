@@ -17,6 +17,6 @@ class SetTurbolinksHeader
     {
         $response = $next($request);
 
-        return $response->header('Turbolinks-Location', 'foo/bar');
+        return $response->header('Turbolinks-Location', $request->route()->uri());
     }
 }
