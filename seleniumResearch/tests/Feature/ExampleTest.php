@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use Tests\TestCase;
 use Tests\SeleniumTestCase;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
@@ -10,7 +11,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 class ExampleTest extends SeleniumTestCase
 {
     /** @test */
-    public function testTitle()
+    public function test_title()
     {
         $this->visit('/')
              ->see('Laravel', 'title');
@@ -23,6 +24,6 @@ class ExampleTest extends SeleniumTestCase
              ->type('Hello World', 'message')
              ->press('Submit')
              ->see('The form was submitted.')
-             ->seePageIs('/form-sumbitted');
+             ->seePageIs('/form-endpoint');
     }
 }
