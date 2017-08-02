@@ -91,6 +91,8 @@
         </div>
 
         <form method="POST" action="/form-endpoint" style="margin-top:50px;">
+            {{ csrf_field() }}
+            
             <label for="message">Message:</label>
             <input type="text" name="message">
 
