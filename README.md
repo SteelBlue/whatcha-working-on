@@ -15,3 +15,6 @@ java -jar selenium.jar
 Update the Java SDK by visiting http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 Download the latest Java platform.
+
+#### If SeleniumTests fails for geckodriver
+Install geckodriver with `brew install geckodriver`
