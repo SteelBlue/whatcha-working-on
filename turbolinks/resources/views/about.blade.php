@@ -74,7 +74,7 @@
             </div>
 
             <div class="links">
-                <a href="/about">About</a>
+                <a href="/">Home</a>
             </div>
         </div>
     </div>
