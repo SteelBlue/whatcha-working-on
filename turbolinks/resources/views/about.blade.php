@@ -24,7 +24,7 @@
             </div>
 
             <div class="links">
-                <a href="/">Home</a>
+                <a href="/" data-turbolinks="false">Home</a>
             </div>
         </div>
     </div>
