@@ -14,7 +14,8 @@ class SeleniumTest extends PHPUnit_Extensions_Selenium2TestCase
 
     public function testTitle()
     {
-        $this->visit('/')->assertEquals('Laravel', $this->title());
+        $this->visit('/')
+             ->assertEquals('Laravel', $this->title());
     }
 
     protected function visit($path)
