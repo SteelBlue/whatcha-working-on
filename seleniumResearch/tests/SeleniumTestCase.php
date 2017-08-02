@@ -35,6 +35,8 @@ class SeleniumTestCase extends PHPUnit_Extensions_Selenium2TestCase
     protected function press($text)
     {
         $this->byXPath("//button[contains(text(), '{$text}')]");
+
+        return $this;
     }
 
     /**
