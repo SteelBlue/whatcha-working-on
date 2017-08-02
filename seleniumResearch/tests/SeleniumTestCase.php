@@ -57,6 +57,8 @@ class SeleniumTestCase extends PHPUnit_Extensions_Selenium2TestCase
     protected function hold($seconds)
     {
         sleep($seconds);
+
+        return $this;
     }
 
 }
