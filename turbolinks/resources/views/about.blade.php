@@ -24,7 +24,8 @@
             </div>
 
             <div class="links">
-                <a href="/" data-turbolinks="false">Home</a>
+                <a href="/">Home</a>
+                <a href="/" data-turbolinks="false">Home (no turbolinks)</a>
                 <a href="/redirect">Redirect</a>
             </div>
         </div>
