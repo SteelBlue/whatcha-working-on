@@ -70,7 +70,7 @@
 
         <div class="content">
             <div class="title m-b-md">
-                Hello World
+                About
             </div>
 
             <div class="links">
