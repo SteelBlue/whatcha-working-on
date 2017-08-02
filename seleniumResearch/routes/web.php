@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/form', function () {
     return view('form');
 });
+
+Route::post('/form-endpoint', function() {
+    return "The form was submitted.";
+});
