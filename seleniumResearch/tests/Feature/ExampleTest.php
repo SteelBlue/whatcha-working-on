@@ -9,14 +9,19 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class ExampleTest extends SeleniumTestCase
 {
-    /**
-     * Test the title <title> text of the homepage.
-     *
-     * @return void
-     */
+    /** @test */
     public function testTitle()
     {
         $this->visit('/')
              ->see('Laravel', 'title');
+    }
+
+    /** @test */
+    public function it_fills_out_a_form()
+    {
+        $this->visit('/')
+             ->type('Hello World', 'message')
+             ->press('Submit')
+             ->see('The form was submitted.');
     }
 }
