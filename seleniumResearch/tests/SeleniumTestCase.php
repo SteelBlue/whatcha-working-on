@@ -27,7 +27,7 @@ class SeleniumTestCase extends PHPUnit_Extensions_Selenium2TestCase
 
     protected function type($value, $name)
     {
-        $this->byName($value)->value($value);
+        $this->byName($name)->value($value);
 
         return $this;
     }
