@@ -75,6 +75,7 @@
 
                 <div class="links">
                     <a href="/about">About</a>
+                    <a href="/redirect">Redirect</a>
                 </div>
             </div>
     </div>
