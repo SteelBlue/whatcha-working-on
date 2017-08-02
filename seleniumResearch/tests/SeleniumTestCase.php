@@ -6,6 +6,8 @@ use PHPUnit_Extensions_Selenium2TestCase;
 
 class SeleniumTestCase extends PHPUnit_Extensions_Selenium2TestCase
 {
+    protected $baseUrl = 'http://seleniumresearch.dev/';
+
     protected function setUp()
     {
         $this->setBrowser('firefox');
