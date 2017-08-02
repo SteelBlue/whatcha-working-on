@@ -12,12 +12,21 @@ class SeleniumTest extends PHPUnit_Extensions_Selenium2TestCase
         $this->setBrowserUrl('http://seleniumresearch.dev/');
     }
 
+    /**
+     * Test the title <title> text of the homepage.
+     */
     public function testTitle()
     {
         $this->visit('/')
-             ->see('Laravel', 'title');
+            ->see('Laravel', 'title');
     }
 
+    /**
+     * Visit a url given a path.
+     *
+     * @param $path
+     * @return $this
+     */
     protected function visit($path)
     {
         $this->url($path);
@@ -25,6 +34,13 @@ class SeleniumTest extends PHPUnit_Extensions_Selenium2TestCase
         return $this;
     }
 
+    /**
+     * Assert the tag contains given text.
+     *
+     * @param $text
+     * @param string $tag
+     * @return $this
+     */
     protected function see($text, $tag = 'body')
     {
         $this->assertContains($text, $this->byTag($tag)->text());
