@@ -25,6 +25,13 @@ class SeleniumTestCase extends PHPUnit_Extensions_Selenium2TestCase
         return $this;
     }
 
+    protected function type($value, $name)
+    {
+        $this->byName($value)->value($value);
+
+        return $this;
+    }
+
     /**
      * Assert the tag contains given text.
      *
