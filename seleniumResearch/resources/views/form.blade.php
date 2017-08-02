@@ -90,9 +90,9 @@
             <a href="https://github.com/laravel/laravel">GitHub</a>
         </div>
 
-        <form style="margin-top:50px;">
+        <form method="POST" action="/form-endpoint" style="margin-top:50px;">
             <label for="message">Message:</label>
-            <input name="message">
+            <input type="text" name="message">
         </form>
     </div>
 </div>
