@@ -15,12 +15,19 @@ class SeleniumTest extends PHPUnit_Extensions_Selenium2TestCase
     public function testTitle()
     {
         $this->visit('/')
-             ->assertEquals('Laravel', $this->title());
+             ->see('Laravel', 'title');
     }
 
     protected function visit($path)
     {
         $this->url($path);
+
+        return $this;
+    }
+
+    protected function see($text, $tag = 'body')
+    {
+        $this->assertEquals($text, $this->title());
 
         return $this;
     }
